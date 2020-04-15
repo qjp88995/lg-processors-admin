@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/*侧边小图标开始*/
+.icons-smenu-report {
+    background-position: -40px -840px;
+}
+
+.smenu-list:hover .icons-smenu-report, .second-menu .on .icons-smenu-report {
+    background-position: -40px -940px;
+}
+
+.icons-smenu-cargolist {
+    background-position: -140px -840px;
+}
+
+.smenu-list:hover .icons-smenu-cargolist, .second-menu .on .icons-smenu-cargolist {
+    background-position: -140px -940px;
+}
+
+.icons-smenu-inventorylis {
+    background-position: -240px -840px;
+}
+
+.smenu-list:hover .icons-smenu-inventorylis, .second-menu .on .icons-smenu-inventorylis {
+    background-position: -240px -940px;
+}
+
+.icons-smenu-personbf {
+    background-position: -340px -840px;
+}
+
+.smenu-list:hover .icons-smenu-personbf, .second-menu .on .icons-smenu-personbf {
+    background-position: -340px -940px;
+}
+
+.icons-smenu-comfscmgt {
+    background-position: -440px -840px;
+}
+
+.smenu-list:hover .icons-smenu-comfscmgt, .second-menu .on .icons-smenu-comfscmgt {
+    background-position: -440px -940px;
+}
+
+/*侧边小图标结束*/
+
+/*收入执行表开始*/
+.reportmgt-wrap .table-list {
+    margin-top: 20px;
+}
+
+.reportmgt-wrap .table-list .list-attribt, .reportmgt-wrap .table-list .list-class {
+    background-color: #fff;
+}
+
+.reportmgt-wrap .table-list .list-attribt {
+    padding-top: 20px;
+}
+
+.reportmgt-wrap .table-list .list-class {
+    padding-bottom: 20px;
+}
+
+.reportmgt-wrap .reportmgt .table-list .list-title-bd {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.reportmgt-wrap .table-list .list-class > li {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.reportmgt-wrap .table-list .list-class > li div {
+    line-height: 22px;
+}
+
+.reportmgt-wrap .table-list .list-class > li div.pdtb17 {
+    line-height: 22px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.reportmgt-wrap .ml20 {
+    margin-left: 20px;
+}
+
+.reportmgt-wrap .mon-bal {
+    position: absolute;
+    top: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #1bb869;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.reportmgt-wrap .page-agg {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.reportmgt-wrap .page-agg > div {
+    float: left;
+    line-height: 22px;
+    padding: 10px 0;
+    padding-left: 0.5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.reportmgt-wrap .ml15 {
+    margin-left: 15%;
+}
+
+.reportmgt-wrap .col-page-price {
+    color: #ff6a00;
+}
+ /*收入执行表结束*/
+/*现货明细表开始*/
+.reportmgt-wrap .icon-jg-com {
+    width: 25px;
+    height: 19px;
+    vertical-align: middle;
+}
+
+.reportmgt-wrap i.icon-jg-com {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.reportmgt-wrap .icon-jg-4:hover {
+    background-position: -215px -216px;
+}
+
+.reportmgt-wrap .icon-jg-4 {
+    background-position: -215px -266px;
+}
+/*修改库位号*/
+.reportmgt-wrap .reportmgt .local-input, .reportmgt-wrap .list-classdd .local-input {
+    height: 28px;
+    line-height: 28px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #babbc3;
+    padding-left: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.reportmgt-wrap .icon-save-info {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-position: -160px -512px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.reportmgt-wrap .reportmgt .search .w90 > div {
+    margin-bottom: 5px;
+}
+
+.reportmgt-wrap .sq-btn {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.reportmgt-wrap .sq-btn > a {
+    height: 60px;
+    line-height: 60px;
+}
+/*现货明细表结束*/
+/*单个订单报表开始*/
+.reportmgt-wrap .details-list {
+    padding: 40px;
+    background-color: white;
+}
+/*单个订单报表结束*/
+/*入库日报表开始*/
+.reportmgt-wrap .ordreport .list-attribt.pdt20 {
+    padding-top: 20px;
+}
+
+.reportmgt-wrap .ordreport .list-class.pdb20 {
+    padding-bottom: 20px;
+}
+
+.reportmgt-wrap .ordreport li.list-classdd div.pdtb17 {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.reportmgt-wrap .ordreport li.list-classdd > div {
+    line-height: 22px;
+}
+
+.reportmgt-wrap .ordreport .search-content > li:last-child {
+    border-bottom: none;
+}
+/*入库日报表结束*/
+/*盘点记录开始*/
+.reportmgt-wrap .search-top .search-com.btn-print {
+    background-color: #2876fc;
+    color: #fff !important;
+    border: none;
+}
+
+.reportmgt-wrap .ordreport .content-bottom .list-class-title {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.reportmgt-wrap .icon-up {
+    background-position: -318px -522px;
+    top: 2px;
+}
+
+.reportmgt-wrap .icon-ud {
+    width: 14px;
+    height: 6px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.reportmgt-wrap .icon-down:hover, .reportmgt-wrap .icon-down.on {
+    background-position: -368px -572px;
+    top: 10px;
+}
+/*盘点记录结束*/
+/*提成系数管理开始*/
+/* 等高布局*/
+.reportmgt-wrap .eq-height {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.reportmgt-wrap .eq-height .list-left {
+    float: left;
+    width: 55%;
+    background-color: #fff;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+}
+
+.reportmgt-wrap .eq-height .list-left .list-attribt.pdt20 {
+    padding-top: 20px;
+}
+
+.reportmgt-wrap .eq-height .list-right {
+    float: left;
+    width: 43%;
+    margin-left: 2%;
+    background-color: #fff;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+}
+
+.reportmgt-wrap .eq-height .list-right .list-attribt.pdt20 {
+    padding-top: 20px;
+}
+
+.reportmgt-wrap .eq-height li.list-classdd > div {
+    line-height: 22px;
+}
+
+.reportmgt-wrap .list-class .list-classdd .pdtb17 {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.reportmgt-wrap .list-class .list-classdd div.pdtb16 {
+    line-height: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.reportmgt-wrap .list-class.pb20 {
+    padding-bottom: 20px;
+}
+
+.reportmgt-wrap input.vl, .reportmgt-wrap input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+/*审核记录开始*/
+.reportmgt-wrap .the-audited .audited-li {
+    padding: 8px 40px;
+}
+
+.reportmgt-wrap .the-audited .audited-li div > span {
+    line-height: 14px;
+}
+/*审核记录结束*/
+/*审核*/
+.reportmgt-wrap .the-audit {
+    padding: 17px 40px;
+    margin-bottom: 20px;
+}
+
+.reportmgt-wrap .the-audit .audit-label {
+    display: inline-block;
+    width: 20%;
+}
+
+.reportmgt-wrap .the-audit .audit-txt {
+    float: left;
+    width: 80%;
+}
+
+.reportmgt-wrap .the-audit input[type="radio"] {
+    vertical-align: middle;
+}
+
+.reportmgt-wrap .the-audit label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.reportmgt-wrap .audit-txt input[type="text"] {
+    width: 80%;
+    height: 28px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-indent: 6px;
+    font-family: inherit;
+    font-size: 12px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.reportmgt-wrap .list-class .list-classdd.on {
+    border: 1px solid rgba(40, 118, 252, 0.7);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -1px;
+}
+
+.reportmgt-wrap .btn-add {
+    background-color: #2876fc;
+}
+/*提成系数管理结束*/
+.reportmgt-wrap .search-content li:last-child {
+    border-bottom: none;
+}
+/*提示圆点信息开始*/
+.reportmgt-wrap .msg-says-dot {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #ff6a00;
+}
+
+.reportmgt-wrap .msg-says {
+    white-space: nowrap;
+    line-height: 24px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 12px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    left: 40px;
+    bottom: -15px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(40, 118, 252, 0.5);
+    box-shadow: 0px 0px 20px 0px rgba(40, 118, 252, 0.5);
+}
+
+.reportmgt-wrap .msg-says span {
+    color: #0F1533;
+}
+/*提示圆点信息结束*/
+/*业务数据分析柱状图开始*/
+.busin-analysis .wrapcontent {
+    padding: 0;
+}
+
+.busin-analysis .search {
+    margin-bottom: 20px;
+}
+
+.busin-analysis #main {
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff !important;
+    margin-right: 20px;
+}
+/*业务数据分析柱状图结束*/
+/*客户产值开始*/
+.reportmgt-wrap .perct-pdtb11 {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.reportmgt-wrap .pdl10 {
+    padding-left: 10px;
+}
+
+.reportmgt-wrap .list-histogram {
+    height: 30px;
+    line-height: 30px;
+}
+
+.reportmgt-wrap .list-histogram a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #0f1533;
+}
+
+.reportmgt-wrap .list-histogram a.on {
+    background: #fff;
+}
+
+.reportmgt-wrap .table-list.mt0 {
+    margin-top: 0;
+}
+
+.reportmgt-wrap .eq-height-list {
+    overflow: hidden;
+}
+
+.reportmgt-wrap .eq-height-list .eq-left, .reportmgt-wrap .eq-height-list .eq-right {
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+}
+
+.reportmgt-wrap .reportmgt .eq-height-list .list-title-bd, .reportmgt-wrap .reportmgt .eq-height-list .list-class {
+    margin-left: 40px;
+    margin-right: 40px;
+    background: #fff;
+}
+
+.reportmgt-wrap .eq-left, .reportmgt-wrap .eq-right {
+    background: #fff;
+}
+/*客户产值结束*/
+
+
+/*20171008 add*/
+.jgs2016_table{background:#fff;overflow:hidden;padding:20px 40px;}
+.pdtitle{overflow:hidden;}
+.pdtitle > span{text-align: left;margin:0;padding: 0;float: left;color: #333;display: inline-block;height:28px;line-height: 28px;padding:4px 0;color:#0F1533;border-bottom: 1px solid #9aa2ce
+}
+.contlist{border-bottom: 1px solid #ddd;overflow:hidden;}
+.contlist >ul >li{float:left;line-height: 22px;padding-top: 17px;padding-bottom: 17px;font-size:12px;}
+.jgs2016_tabck{padding:10px;text-align: left;border-collapse: collapse;width:100%;margin-bottom:20px;}
+.jgs2016_tabck th{background: #f1f1f9;padding:8px 2px;}
+.jgs2016_tabck td{padding:5px 2px;}
+.s_hide{display: none}
+.jg_divgd {text-overflow: ellipsis; -moz-text-overflow: ellipsis; overflow: hidden;white-space: nowrap;display: inline-block;width: 100%;}
+
+
+.sk-mul>.on{background:#2876fc;color:#fff;border-color:#babbc3;}
+.sk-mulist{font-size:12px;color:#333;border:1px solid #babbc3;padding:4px 5px;border-radius:3px;}
+.table_show{ border-collapse:collapse;width:100%;margin-top:10px;background:#fff;}
+.table_show th{background-color:#eff2f9;line-height:38px;text-align:center;border-bottom:1px #dedede solid;color:#333}
+.table_show td{line-height:38px;border-bottom:1px #dedede solid;text-align:center;margin-top:5px;color:#333}
+.border_bbr{border-right:1px #dedede solid}
+.border_bbl{border-left:1px #dedede solid}
+.border_bbt{border-top:1px #dedede solid}
+
+
+.reportmgt-wrap .icon-down {
+    background-position: -318px -572px;
+    top: 10px;
+}
+.reportmgt-wrap .icon-up:hover, .reportmgt-wrap .icon-up.on{background-position: -368px -522px;
+    top: 2px;}
+
+.icon-print {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: url(../images/uprint.png) no-repeat;
+    margin-left:5px;
+}
+
+.n18_grow{font-family:'Arial Negreta', 'Arial';font-weight:700;}
+.n18_grow_up{color:#ff6a00;}
+.n18_grow_down{color:#1bb869;}
+.n18_growimg{background:url(../images/starImage.png) no-repeat center;}
+
+.selSingle{line-height: 26px;}
+.selSinglOvh{overflow: hidden;}
+.selSingle >.on{color: #fff;background-color: #2876fd;border-color:#2876fd;}
+.selOption{ border: 1px solid #dcdcdc;margin-right: 1%; border-radius: 4px;color: #0F1533; padding: 0 15px;}
+.selOption:hover{border-color:#2876fd;}
+
+.n18-updown{cursor:pointer;background-image: url(../images/n18-updown.png);display: inline-block; width:20px;height:15px;background-position:-5px -7px}
+.n18-updown.down,.n18-updown:hover{background-position:-5px -36px}
+.n18-updown.up{background-position:-5px -67px}

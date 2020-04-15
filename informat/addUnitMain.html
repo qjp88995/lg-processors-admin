@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="乐钢网是钢铁电商服务平台提供一站式的钢铁供应链服务平台。"> 
+	<meta name="keywords" content="乐钢网是集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品综合性电商服务平台。">
+	<title>乐钢加工管理系统</title>
+	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<!-- <link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/informat.css">
+	<link rel="stylesheet" href="../css/laydate.css">
+	<link rel="stylesheet" href="../css/ieset.css"> -->
+
+	<!-- 20171115所有css配置 开始 -->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/accessmgt.css">
+	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="../css/financ.css">
+	<link rel="stylesheet" href="../css/ieset.css">
+	<link rel="stylesheet" href="../css/informat.css">
+	<link rel="stylesheet" href="../css/laydate.css">
+	<link rel="stylesheet" href="../css/other.css">
+	<link rel="stylesheet" href="../css/outlibcode.css">
+	<link rel="stylesheet" href="../css/pcpro.css">
+	<link rel="stylesheet" href="../css/popup.css">
+	<link rel="stylesheet" href="../css/primgt.css">
+	<link rel="stylesheet" href="../css/proinstruct.css">
+	<link rel="stylesheet" href="../css/proqlttrack.css">
+	<link rel="stylesheet" href="../css/reportmgt.css">
+	<link rel="stylesheet" href="../css/wastemgt.css">
+	<link rel="stylesheet" type="text/css" href="../css/jgs_20160803.css"/>
+	<link rel="stylesheet" href="../css/style2020.css">
+	<!-- 20171115所有css配置 结束 -->
+	<style>.infomat-wrap .addproduct .addproduct-li{margin-bottom: 20px}</style>
+</head>
+<body class="clearfix">
+	<!-- 右侧内容开始 -->
+	<div class="rightcont infomat-wrap">
+		<div class="wrapcontent reportmgt">
+		<div class="crumbs">
+			<i class="icon icon-crumbs"></i>
+			<a href="unitMaintain.html">单位维护管理</a>
+		</div>
+		<ul class="addproduct mt20">
+		<li class="list-classdd clearfix">
+			<label class="fl" style="line-height: 28px;padding-top:5px;margin-right: 5px "><span class="orange">*</span>企业性质：</label>
+			<div class="w90" style="padding-left: 0">
+				<ul class="pro-method w100 fl opt-promtd ml0 selSingle">
+					<input type="hidden" value="" name="" />
+					<li>外资</li>
+					<li>合资</li>
+					<li>民营</li>
+					<li>国企</li>
+				</ul>
+			</div>
+		</li>
+		<li class="clearfix addproduct-li">
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>登录账号：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="手机号" onblur="checkMobile(this)">
+					<span class="alertTipText dn orange"></span>
+				</div>
+			</div>
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>接收短信：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="手机号" onblur="checkMobile(this)" >
+					<span class="alertTipText dn orange"></span>
+				</div>
+			</div>
+		</li>
+
+		<li class="clearfix addproduct-li">
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>公司名称：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="公司名称" maxlength="50" onkeyup="setBrackets(this)">
+				</div>
+			</div>
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>公司税号：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="公司税号" maxlength="18" onblur="checkTax(this)" onkeyup="changeUpper(this)">
+					<span class="alertTipText dn orange"></span>
+				</div>
+			</div>
+		</li>
+
+		<li class="clearfix addproduct-li">
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>注册地址：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="省-市-区">
+				</div>
+			</div>
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>详细地址：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="详细地址" maxlength="50">
+				</div>
+			</div>
+		</li>
+		<li class="clearfix addproduct-li">
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>开户银行：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="开户银行" maxlength="30" onblur="checkHan(this)">
+					<span class="alertTipText dn orange"></span>
+				</div>
+			</div>
+			<div class="fl w50">
+				<label class="fl pr5"><span class="orange">*</span>银行账号：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="银行账号" onblur="checkNumber(this)" maxlength="30" onkeyup="this.value = this.value.replace(/[\s]/g, '').replace(/(\d{4})(?=\d)/g,'$1 ')">
+					<span class="alertTipText dn orange"></span>
+				</div>
+			</div>
+		</li>
+		<li class="clearfix addproduct-li">
+			<div class="fl w50">
+				<label class="fl pr5">&emsp;<span class="orange">*</span>联系人：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text required" placeholder="联系人" maxlength="50" onblur="checkHan(this)">
+					<span class="alertTipText dn orange"></span>
+				</div>
+			</div>
+			<div class="fl w50">
+				<label class="fl pr5">&ensp;固定电话：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text " placeholder="区号" maxlength="4" style="width: 20%" onblur="checkNumber(this)">-<input type="text" class="txt-input set-text" placeholder="固定电话" maxlength="8" style="width: 40%" onblur="checkNumber(this)">
+					<span class="alertTipText dn orange"></span>
+				</div>
+			</div>
+		</li>
+		<li class="clearfix addproduct-li">
+			<div class="fl w50">
+				<label class="fl pr5">&ensp;联系地址：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text" placeholder="省-市-区">
+				</div>
+			</div>
+			<div class="fl w50">
+				<label class="fl pr5">&ensp;详细地址：</label>
+				<div class="fl div-right">
+					<input type="text" class="txt-input set-text" placeholder="详细地址" maxlength="50">
+				</div>
+			</div>
+		</li>
+		<li class="clearfix addproduct-li">
+			<div class="fl w50">
+				<label class="fl pr5">&ensp;营业执照：</label>
+				<div class="fl div-right">
+					<a href="javascript:void(0)" class="jgs2016_upfile" style="line-height:20px" onclick="javascript:layerUpload('A2098C2A2C785B96E05371001FAC8719','1000','1','M');">常规上传</a>
+					<a href="##">aaaa.jpg</a><a href="##" class="ml1">删除</a>
+				</div>
+			</div>
+		</li>
+	</ul>
+	
+	</div>
+</ul>
+	<!-- info end -->
+
+
+
+
+
+	<div class="orange tc">你的公司的经营状态是已清算，不能提交</div>	
+
+	<div class="instorage-confirm tc mt20 mb20">
+		<a href="javascript:void(0);" class="btn-bot-com btn-confirm mr2" onclick="submitClick()">保存</a>
+		<a href="javascript:void(0);" class="btn-bot-com btn-print">取消</a>
+	</div>
+
+	</div>
+			<!-- 加工订单表结束 -->
+
+		</div>
+	</div>
+	<!-- 右侧内容结束 -->
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/jquery.placeholder.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/infomatleftbar.js"></script>
+	<script src="../js/topbar.js"></script>
+	<script src="../js/laydate.js"></script>
+	<script src="../js/infomat.js"></script>
+	<script>
+		$(function(){
+			var leftbar = $(".leftbar");
+			var topbar = $(".topbar");
+			
+			$("body").prepend(topbar);
+			$("body").prepend(leftbar);
+			$(".unitinformgt1").addClass('on');
+
+
+			$('.selSingle').children('li').on('click',function(){
+				$(this).siblings().removeClass('on');
+				$(this).addClass('on');
+				$(this).parent().find('input').val($(this).text())
+			})
+
+			
+
+
+		})
+
+		//20200320 add
+		function checkMobile(obj) {
+		    var mobile = $(obj).val();
+		    mobile=mobile.replace(/\s/g,"");
+		    var express = /^1[0-9]{10}$/;
+		    if(!express.test(mobile)){
+		        $(obj).next('.alertTipText').html('请您输入正确的手机号！').show();
+		        $(obj).val('');
+		        return;
+		    }else{
+		        $(obj).next('.alertTipText').hide();
+		    }
+		}
+
+		function setBrackets(obj){
+			var str=$(obj).val();
+			//console.log()
+			$(obj).val(str.replace(/（/gi,"(").replace(/）/gi,")"))
+		}
+
+		function checkTax(obj){
+			var str=$.trim($(obj).val());
+			var reg= /^[0-9a-zA-Z]*$/;
+			if(str.length!==18){
+			    $(obj).next('.alertTipText').html('请您输入18位公司税号！').show();
+		       // $(obj).val('');
+		        return
+			}else{
+				if(!reg.test(str)){
+					$(obj).next('.alertTipText').html('请您输入正确公司税号！').show();
+					return;
+				}else{
+					$(obj).next('.alertTipText').hide();
+				}
+			}
+		}
+
+		function changeUpper(obj){
+			var str=$.trim($(obj).val()).toUpperCase();
+			$(obj).val(str)
+		}
+
+		function checkHan(obj){
+			var str=$.trim($(obj).val())
+			var reg = /^[\u4e00-\u9fa5]+$/;
+			if(!reg.test(str)){
+					$(obj).next('.alertTipText').html('请输入汉字').show();
+					return;
+				}else{
+					$(obj).next('.alertTipText').hide();
+				}
+
+		}
+
+		function checkNumber(obj){
+			var str=$.trim($(obj).val())
+			var reg = /^[0-9]$/;
+			if(!reg.test(str)){
+					$(obj).parents(".div-right").find('.alertTipText').html('请输入数字').show();
+					return;
+				}else{
+					$(obj).parents(".div-right").find('.alertTipText').hide();
+				}
+		}
+
+		function submitClick(){
+			var flag=0;
+			$(".required").each(function(){
+				if($.trim($(this).val())==''){
+					flag++
+					return;
+				}
+			})
+			if(flag){
+				alert("星号标识字段必填");
+			}
+		}
+
+
+	</script>
+</body>
+</html>

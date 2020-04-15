@@ -1,0 +1,92 @@
+/*404样式开始*/
+.page-404 .icon-logo4 {
+	width: 132px;
+    height: 50px;
+    background: url(../images/logoNw.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    left: 2%;
+    top: 10px;
+    background-size: 75%;
+}
+@media screen and (max-width: 1150px) {
+   .page-404 .icon-logo4 {
+   		width: 50px;
+    	height: 50px;
+	    background-image: url(../images/logoNws.png);
+	    -webkit-background-size: contain;
+	    background-size: contain;
+	    position: absolute;
+	    top: 5px;
+	    left: 1%;
+   }
+}
+.page-404 .topbar {
+	width: 100%;
+}
+.page-404-content {
+	width: 100%;
+	min-width: 1024px;
+	background-color: #fff;
+	position: absolute;
+	top: 105px;
+	bottom: 20px;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.page-404-content .pagenofind {
+	width: 300px;
+	height: 230px;
+	background: url('../images/404.png') no-repeat;
+	margin: 0 auto;
+	padding-top: 250px;
+	text-align: center;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+.page-404-content .pagenofind .href-local {
+	color: #ff6a00;
+}
+/*没有货物明细开始*/
+.page-404 .company-list-content  {
+	background: #fff;
+	position: absolute;
+    left: 10%;
+    right: 0;
+    bottom: 20px;
+    top: 100px;
+    margin-left: 20px;
+}
+.page-404 .nocg-result {
+	margin-top: 0; 
+	padding-top: 60px;
+}
+.page-404 .nocg-result .m-noresult {
+	margin-left: 30%;
+}
+.page-404 .s-small .rightcont .company-list-content{
+	left: 4%;
+	-webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+/*搜索不到页面信息样式开始*/
+.rp-noresult {
+    height: 300px;
+    margin-top: 60px;
+}   
+.rp-noresult .m-noresult {
+    width: 300px;
+    height: 230px;
+    background: url(../images/searcnoufd.png) no-repeat;
+    margin: 0 auto;
+    padding-top: 250px;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+/*搜索不到页面信息样式结束*/

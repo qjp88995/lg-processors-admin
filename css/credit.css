@@ -1,0 +1,169 @@
+.credit {
+    display: block;
+}
+
+.credit input.form-input {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    outline: none;
+    border: 1px solid #babbc3;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+
+.credit input.form-input:focus {
+    border-color: #2876fc;
+}
+
+.credit button {
+    display: inline-block;
+    min-width: 70px;
+    height: 28px;
+    border-radius: 4px;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.credit button.button-primary {
+    background-color: #2876fc;
+    color: white;
+}
+
+.credit button.button-primary:hover {
+    background-color: #3366ff;
+}
+
+.credit button.button-default {
+    background-color: rgb(230, 230, 235);
+    color: #0f1533;
+}
+
+.credit button.button-default:hover {
+    background-color: rgb(186, 186, 192);
+}
+
+.credit button.button-success {
+    background-color: #1bb869;
+    color: white;
+}
+
+.credit button.button-success:hover {
+    background-color: #00a150;
+}
+
+.credit button.button-gray {
+    background-color: rgb(144, 144, 146);
+    color: white;
+}
+
+.credit button.button-gray:hover {
+    background-color: rgb(81, 81, 92);
+}
+
+.credit .form {
+    font-size: 0;
+}
+
+.credit .form-item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+
+.credit .form-item-label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+.credit .form-item-control {
+    display: inline-block;
+    width: 230px;
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+.credit .radio-group {
+    font-size: 0;
+}
+
+.modal-wrap {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    /* background: rgba(100,100,100,.5); */
+}
+
+.modal-wrap::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.modal {
+    position: relative;
+    display: inline-block;
+    width: 530px;
+    height: 394px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    vertical-align: middle;
+}
+
+.modal-title {
+    margin: 20px 30px 0;
+    text-align: left;
+    color: #FF6B00;
+    font-size: 14px;
+}
+
+.modal-content {
+    margin: 40px 72px 0;
+    text-align: left;;
+}
+
+.modal-content .form-item {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.modal-content .form-item-label {
+    display: inline-block;
+    width: 70px;
+    color: #333;
+}
+
+.modal-content .form-item-control {
+    display: inline-block;
+    width: calc(100% - 75px);
+    color: #333;
+}
+
+.modal-content .credit-limit .spacing {
+    margin-right: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+}

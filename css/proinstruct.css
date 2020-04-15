@@ -1,0 +1,136 @@
+body.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.proinstruct-wrap.print-wrap {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.proinstruct-wrap .btn-print-wrap, .proinstruct-wrap .proqlttrack-wrap {
+    text-align: right;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.proinstruct-wrap .btn-print-wrap .btn-print-com, .proinstruct-wrap .btn-print-wrap .btn-proqlttrack, .proinstruct-wrap .proqlttrack-wrap .btn-print-com, .proinstruct-wrap .proqlttrack-wrap .btn-proqlttrack {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 12px;
+    color: #fff;
+    background: #317ee8;
+    border: 1px solid #317ee8;
+}
+
+.proinstruct-wrap .proqlttrack-wrap {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.proinstruct-wrap table {
+    width: 100%;
+}
+
+.proinstruct-wrap .content-print-top i.print-logo {
+    display: inline-block;
+    width: 193px;
+    height: 80px;
+    background: url("../images/printlogo.png") no-repeat;
+}
+
+.proinstruct-wrap .content-print-top .com-name {
+    font-size: 28px;
+    margin-left: 25px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.proinstruct-wrap .content-print-top .paymt {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 22px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    right: -36px;
+}
+
+.proinstruct-wrap .content-print-wrap {
+    padding-bottom: 40px;
+}
+
+.proinstruct-wrap .content-print-center .cust-info {
+    font-size: 12px;
+    table-layout: fixed;
+}
+
+.proinstruct-wrap .content-print-center .cust-info td {
+    line-height: 24px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.proinstruct-wrap .content-print-center .print-pro-list {
+    table-layout: fixed;
+}
+
+.proinstruct-wrap .content-print-center .print-pro-list th {
+    height: 38px;
+    line-height: 38px;
+}
+
+.proinstruct-wrap .content-print-center .print-pro-list td {
+    height: 38px;
+    line-height: 38px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.proinstruct-wrap .content-print-center .print-pro-list td {
+    text-align: center;
+}
+
+.proinstruct-wrap .content-print-center .print-pro-list td.bd-right0 {
+    border-right: 0;
+}
+
+.proinstruct-wrap .content-print-center .print-pro-list td.txt-left, .proinstruct-wrap .content-print-center .print-pro-list th.txt-left {
+    text-align: left;
+    text-indent: 20px;
+}
+
+.proinstruct-wrap .clone-th {
+    font-weight: bold;
+}
+
+.proinstruct-wrap .col-label {
+    color: #5C6596;
+}
+
+.proinstruct-wrap .bg-title {
+    background: #e5eaf8;
+}
+
+.proinstruct-wrap .set-input {
+    width: 80%;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.proinstruct-wrap .table-border {
+    border: 1px solid #e5eaf8;
+    border-top: none;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,794 @@
+@charset "UTF-8";
+/*侧边小图标开始*/
+.icons-smenu-newpur {
+    background-position: -40px -440px;
+}
+
+.smenu-list:hover .icons-smenu-newpur, .second-menu .on .icons-smenu-newpur {
+    background-position: -40px -540px;
+}
+
+.icons-smenu-purprice {
+    background-position: -140px -440px;
+}
+
+.smenu-list:hover .icons-smenu-purprice, .second-menu .on .icons-smenu-purprice {
+    background-position: -140px -540px;
+}
+
+.icons-smenu-accessapp {
+    background-position: -240px -440px;
+}
+
+.smenu-list:hover .icons-smenu-accessapp, .second-menu .on .icons-smenu-accessapp {
+    background-position: -240px -540px;
+}
+
+.icons-smenu-accessstr {
+    background-position: -340px -440px;
+}
+
+.smenu-list:hover .icons-smenu-accessstr, .second-menu .on .icons-smenu-accessstr {
+    background-position: -340px -540px;
+}
+
+.icons-smenu-accessoutlib {
+    background-position: -440px -440px;
+}
+
+.smenu-list:hover .icons-smenu-accessoutlib, .second-menu .on .icons-smenu-accessoutlib {
+    background-position: -440px -540px;
+}
+
+.icons-smenu-outlib {
+    background-position: -540px -440px;
+}
+
+.smenu-list:hover .icons-smenu-outlib, .second-menu .on .icons-smenu-outlib {
+    background-position: -540px -540px;
+}
+
+.icons-smenu-accesspaymt {
+    background-position: -640px -440px;
+}
+
+.smenu-list:hover .icons-smenu-accesspaymt, .second-menu .on .icons-smenu-accesspaymt {
+    background-position: -640px -540px;
+}
+
+.icons-smenu-custowned {
+    background-position: -740px -440px;
+}
+
+.smenu-list:hover .icons-smenu-custowned, .second-menu .on .icons-smenu-custowned {
+    background-position: -740px -540px;
+}
+
+/*侧边小图标结束*/
+.accessmgt-wrap .telesc-wrap {
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+ /*展开更多中的审核信息*/
+.accessmgt-wrap .unfolded-putaway > .loading-more-link {
+    height: 40px;
+    line-height: 40px;
+}
+
+.accessmgt-wrap .audit-node {
+    width: 70%;
+    font-size: 12px;
+}
+
+.accessmgt-wrap .audit-node label {
+    font-size: 12px;
+}
+
+.accessmgt-wrap .review-time {
+    width: 20%;
+}
+
+.accessmgt-wrap .audit-auditor.mgl70 {
+    margin-left: 70%;
+}
+
+.accessmgt-wrap .audit-auditor label, .accessmgt-wrap .audit-auditor span, .accessmgt-wrap .audit-auditor.mgl70 label, .accessmgt-wrap .audit-auditor.mgl70 span {
+    font-size: 12px;
+}
+ /*新增采购部分开始*/
+.accessmgt-wrap .list-class.newpurch-wrap > li:first-child {
+    padding-top: 2px;
+}
+
+.accessmgt-wrap .list-class.newpurch-wrap > li.list-classdd > div {
+    padding-bottom: 0;
+}
+
+.accessmgt-wrap .search.bbnone {
+    border-bottom: none;
+}
+
+.accessmgt-wrap .list-classdd .search input {
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.accessmgt-wrap .list-classdd .search .search-content {
+    border-top: none;
+}
+
+.accessmgt-wrap .list-class > li.list-classdd.classdd-input > div {
+    line-height: normal;
+}
+
+.accessmgt-wrap .search-box .pdldot5 {
+    padding-left: .5%;
+}
+
+.accessmgt-wrap input.txt-int2 {
+    text-indent: 2%;
+}
+
+.accessmgt-wrap .list-class > li.list-classdd.classdd-input > div.pdl0 {
+    padding-left: 0;
+}
+
+.accessmgt-wrap .list-class > li.list-classdd.classdd-input > div input[type="text"] {
+    height: 40px;
+}
+
+.accessmgt-wrap .list-class > li.list-classdd.classdd-input .simult-input {
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.accessmgt-wrap .simult-input .simult-arrow {
+    top: 14px;
+}
+
+.accessmgt-wrap .list-class > li.list-classdd.classdd-input .laydate-icon {
+    padding-right: 6px;
+    border: none;
+    border-bottom: 1px solid #babbc3;
+}
+
+.accessmgt-wrap .pro-list .loading-more-link {
+    height: 40px;
+    line-height: 40px;
+}
+
+.accessmgt-wrap .loading-more-cont {
+    padding-left: 20px;
+}
+
+.accessmgt-wrap .loading-more-cont .loading-more-link {
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+
+.accessmgt-wrap .loading-more-cont > li {
+    line-height: 14px;
+    padding: 8px 20px;
+}
+
+.accessmgt-wrap .paddinglr40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/*新增采购部分结束*/
+/*辅料审批开始*/
+.accessmgt-wrap .review-pbbtn {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.accessmgt-wrap .review-passed {
+    background-color: #1bb869;
+}
+
+.accessmgt-wrap .appr-btn {
+    color: #fff;
+    background-color: #2876fc;
+}
+
+.accessmgt-wrap .appr2-btn {
+    color: #fff;
+    background-color: #FF6A00;
+}
+
+.accessmgt-wrap .search-top .simult-input .simult-arrow {
+    top: 8px;
+}
+
+.accessmgt-wrap .org-bg {
+    background-color: #FF6A00;
+}
+  /*审批的状态设置开始*/
+.accessmgt-wrap .col-ph-approval {
+    color: #1BB869;
+    cursor: default;
+}
+
+.accessmgt-wrap .col-pt-approval {
+    color: #FF6A00;
+}
+
+.accessmgt-wrap .col-normal {
+    color: #0F1533;
+}
+/*审批的状态设置结束*/
+/*采购核价开始*/
+.accessmgt-wrap .col-nuclear-price {
+    color: #1bb869;
+    cursor: default;
+}
+
+.accessmgt-wrap .col-nuclear-comp {
+    color: #FF6A00;
+    cursor: default;
+}
+
+.accessmgt-wrap .marginl33 {
+    margin-left: 33%;
+}
+/*采购核价结束*/
+/*辅料入库页面开始*/
+.accessmgt-wrap .list-classdd input[type="checkbox"], .accessmgt-wrap .list-attribt input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.accessmgt-wrap .simult-cont > li:last-child {
+    border-bottom: none;
+}
+
+.accessmgt-wrap .accessstr-btn {
+    background-color: #118af2;
+}
+
+.accessmgt-wrap .accessstred-btn {
+    color: #118af2;
+}
+/*正文部分*/
+/*标题部分*/
+.accessmgt-wrap .list-class > .list-class-title {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.accessmgt-wrap ul.list-class > .list-class-title.paddinglr40 > div {
+    line-height: 36px;
+}
+
+.accessmgt-wrap li.paddinglr40 > div.selectwrap-pd0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accessmgt-wrap li.paddinglr40 > div.selectwrap-pd0 > label {
+    float: left;
+    padding-top: 6px;
+}
+
+.accessmgt-wrap li.paddinglr40 > div.selectwrap-pd0 > .txt-input {
+    height: 48px;
+    line-height: 48px;
+    background: none;
+}
+
+.accessmgt-wrap .list-class-title .txt-input.set-titletime {
+    padding-right: 6px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #e5eaf8;
+    border: none;
+    border-bottom: 1px solid #babbc3;
+}
+
+.accessmgt-wrap .list-class-title .txt-input.set-titletime:hover {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #2876fc;
+}
+
+.accessmgt-wrap .loading-more-cont.list-class > li.loading-more-link > div.pdtb10 {
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+
+.accessmgt-wrap .list-class > li.list-classdd > div.selectwrap-pd0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accessmgt-wrap li.list-classdd > div.selectwrap-pd0 > .txt-input {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.accessmgt-wrap div.selectwrap-pd0 > .simult-select > .simult-input {
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.accessmgt-wrap div.selectwrap-pd0 .simult-cont {
+    top: 35px;
+}
+
+.accessmgt-wrap .simult-select.h40 {
+    height: 40px;
+}
+ /*附件上传*/
+.accessmgt-wrap .attachment-upload {
+    height: 60px;
+    line-height: 60px;
+}
+
+.accessmgt-wrap .attachment-upload .upd-paperclip {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("../images/u420.png") no-repeat 0 0;
+    vertical-align: middle;
+}
+
+.accessmgt-wrap .attachment-upload .upload-wrap {
+    border: none;
+    height: 32px;
+    line-height: 28px;
+}
+
+.accessmgt-wrap .attachment-upload .upload-wrap:hover {
+    background: none;
+}
+
+.accessmgt-wrap .attachment-upload .fileName {
+    vertical-align: middle;
+}
+/*辅料入库页面结束*/
+/*辅料付款开始*/
+.accessmgt-wrap .tr {
+    text-align: right;
+}
+/*展开商品列表辅料项目开始*/
+.accessmgt-wrap .loading-more-cont.list-class > li.list-classdd {
+    height: 59px;
+    padding: 0 40px;
+}
+
+.accessmgt-wrap .loading-more-cont.list-class > li.list-classdd > div {
+    padding: 15px 0;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 0.5%;
+}
+
+.accessmgt-wrap .loading-more-cont.list-class > .list-classdd.loading-more-link {
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+
+.accessmgt-wrap .btn-applypay {
+    background-color: #ff6a00;
+}
+ /*拿的排产页面的开始*/
+.accessmgt-wrap .applypay-ticket .business-info li > p > label {
+    width: auto;
+}
+
+.accessmgt-wrap .applypay-ticket .business-info {
+    padding: 10px 20px;
+}
+
+.accessmgt-wrap .applypay-ticket .business-info .btn-bot-com {
+    height: 29px;
+    line-height: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.accessmgt-wrap .s-small .applypay-ticket.print-fixed {
+    left: 4.5%;
+}
+
+.accessmgt-wrap .applypay-ticket.print-fixed {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    padding-top: 10px;
+    left: 10%;
+    -webkit-box-shadow: 0 0 15px rgba(40, 118, 252, 0.7);
+    box-shadow: 0 0 15px rgba(40, 118, 252, 0.7);
+    z-index: 999;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -otransition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    right: 0;
+    padding-right: 20px;
+}
+
+.accessmgt-wrap .applypay-ticket .business-info li > p > input {
+    width: 100%;
+}
+
+.accessmgt-wrap .applypay-ticket .fileName {
+    display: inline-block;
+}
+
+.accessmgt-wrap .applypay-ticket .business-info > ul > li {
+    margin-bottom: 0px;
+}
+
+.accessmgt-wrap .applypay-ticket .business-info > ul > li.paytips {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1600px) {
+    .accessmgt-wrap .applypay-ticket.print-fixed {
+        left: 7.5%;
+    }
+}
+/*拿的排产页面的结束*/
+/*展开商品列表辅料项目结束*/
+/*辅料付款结束*/
+
+/*财务辅料付款开始*/
+.accessmgt-wrap .ml15 {
+    margin-left: 15%;
+}
+
+.accessmgt-wrap .content-bottom .add-file {
+    padding-top: 6px;
+}
+
+.accessmgt-wrap .content-bottom .add-file .fileName {
+    vertical-align: middle;
+}
+
+.accessmgt-wrap .content-bottom .add-file {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.accessmgt-wrap .content-bottom .add-file label, .accessmgt-wrap .content-bottom .add-file .fileName {
+    line-height: 28px;
+}
+
+.accessmgt-wrap .loading-more-link .fileName {
+    display: inline-block;
+    float: left;
+}
+
+.accessmgt-wrap .loading-more-link .fileName .icon-file-clear {
+    top: 8px;
+}
+/*财务辅料付款结束*/
+
+/*outlibrary辅料出库页面开始*/
+.accessmgt-wrap .list-class > li.list-classdd > div.pdtb17 {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.accessmgt-wrap .list-class.set-lh22 > li.list-classdd > div {
+    line-height: 22px;
+}
+
+.accessmgt-wrap .outlibrary-lists {
+    overflow: hidden;
+}
+
+.accessmgt-wrap .outlibrary-lists .list-left {
+    float: left;
+    width: 68%;
+    background-color: #fff;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+}
+
+.accessmgt-wrap .outlibrary-lists .list-right {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    background-color: #fff;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+}
+
+.accessmgt-wrap .go-outlib {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.accessmgt-wrap .go-outlib .btn-go-outlib {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.accessmgt-wrap .outlib-info {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.accessmgt-wrap .outlib-info .search {
+    border-bottom: none;
+}
+
+.accessmgt-wrap .outlib-info .search-box .search-input, .accessmgt-wrap .outlib-info .txt-input {
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.accessmgt-wrap .outlib-info .ml70 {
+    margin-left: 70px;
+}
+
+.accessmgt-wrap .w68 {
+    width: 68%;
+}
+/*outlibrary辅料出库页面结束*/
+/*辅料出库详情开始*/
+.accessmgt-wrap .w54, .accessmgt-wrap .business-info li > p > input.w54 {
+    width: 54%;
+}
+
+.accessmgt-wrap .list-class.pro-list > li.list-classdd > div.opt-icon-wrap, .accessmgt-wrap .list-class.pro-list > li.list-classdd > div.icon-clear-wrap {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.accessmgt-wrap .business-info.access-used {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.accessmgt-wrap .business-info.access-used .simult-arrow {
+    top: 8px;
+}
+
+.accessmgt-wrap .business-info.access-used li > p > input.w100 {
+    width: 100%;
+}
+
+.accessmgt-wrap .business-info.access-used label.spestyle {
+    display: inline-block;
+    width: 13.5%;
+    text-align: right;
+}
+
+.accessmgt-wrap .opt-accessout {
+    margin-top: 40px;
+}
+
+.accessmgt-wrap .opt-accessout a.btn-opt-outlib {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #1bb869;
+}
+
+.accessmgt-wrap .business-info.access-used .simult-cont {
+    z-index: 101;
+}
+
+.accessmgt-wrap .detail-lists {
+    background-color: #fff;
+}
+
+.accessmgt-wrap .detail-lists .list-attribt > li, .accessmgt-wrap .list-class.pro-list > li {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.accessmgt-wrap .simult-input.out-sourcing.mll2px {
+    margin-left: 2px;
+}
+ /*辅料出库详情结束*/
+/*出库申请记录开始*/
+.accessmgt-wrap .list-attribt.pdt20 {
+    padding-top: 20px;
+}
+
+.accessmgt-wrap .list-class.pro-list.pdb20 {
+    padding-bottom: 20px;
+}
+/*出库申请记录结束*/
+/*出库审批开始*/
+.accessmgt-wrap .loading-more-cont.list-class > li.list-classdd > div.selectwrap-pd0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accessmgt-wrap .list-class.pro-list .loading-more-link {
+    padding-left: 40px;
+}
+
+.accessmgt-wrap .loading-more-cont.list-class > .list-classdd.loading-more-link {
+    padding-left: 20px;
+}
+  /*出库审批结束*/
+.accessmgt-wrap .search-content > li:last-child {
+    border-bottom: none;
+}
+ /*删除信息弹出框提示信息开始*/
+.accessmgt-wrap input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+.accessmgt-wrap .show {
+    display: block;
+}
+
+.accessmgt-wrap .hide {
+    display: none;
+}
+
+.accessmgt-wrap .dialog-center.show {
+    display: block;
+}
+
+.accessmgt-wrap .dialog-center .btn-bot-com {
+    height: 32px;
+    line-height: 32px;
+}
+
+.accessmgt-wrap .dialog-app-comments {
+    outline: none;
+    border: 0;
+    border: 1px solid #d3d3d3;
+    margin-top: 10px;
+    text-indent: 2em;
+    padding-top: 10px;
+    font-family: 'Microsoft YaHei';
+    vertical-align: middle;
+}
+ /*删除信息弹出框提示信息结束*/
+.accessmgt-wrap .ft12, .accessmgt-wrap .list-class > li > div.audit-node > label, .accessmgt-wrap .list-class > li > div.audit-auditor > label {
+    font-size: 12px;
+}
+
+.accessmgt-wrap .correct-select {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    background-position: -209px -509px;
+}
+   /*辅料盘点开始*/
+.accessmgt-wrap .access-list .list-class > li, .accessmgt-wrap .list-attribt > li {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.accessmgt-wrap .msg-says-dot {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #ff6a00;
+}
+
+.accessmgt-wrap .msg-says {
+    white-space: nowrap;
+    line-height: 24px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 12px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    left: 40px;
+    bottom: -15px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(40, 118, 252, 0.5);
+    box-shadow: 0px 0px 20px 0px rgba(40, 118, 252, 0.5);
+    z-index: 2;
+    color: #ff6a00;
+}
+
+.accessmgt-wrap .msg-says-wrap.msg-left .msg-says-dot {
+    left: -10px;
+}
+
+.accessmgt-wrap .msg-says-wrap.msg-left .msg-says {
+    left: -80px;
+    bottom: -45px;
+}
+
+.accessmgt-wrap .icon-save-info {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-position: -160px -512px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.accessmgt-wrap input.money-input {
+    width: 60%;
+    height: 28px;
+    line-height: 28px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    padding-left: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.accessmgt-wrap .list-class.pdb20 {
+    padding-bottom: 20px;
+}
+  /*辅料盘点结束*/
+.accessmgt-wrap .setord {
+    padding-left: 40px;
+    padding-right: 40px;
+    vertical-align: text-top;
+}
+
+.accessmgt-wrap .fixed-selectbox .search-content {
+    bottom: 32px;
+    top: auto;
+    overflow-y: scroll;
+}
+
+.accessmgt-wrap .print-fixed li.search {
+    border-bottom: none;
+}
+
+.accessmgt-wrap .w62 {
+    width: 62%;
+}
+
+.accessmgt-wrap .txt-input.ti5 {
+    text-indent: 5px;
+}

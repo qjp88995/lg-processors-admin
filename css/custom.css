@@ -1,0 +1,556 @@
+@charset "UTF-8";
+/*二级菜单图标*/
+/*新增入库*/
+.icons-smenu-newstr {
+    background-position: -40px -40px;
+}
+
+.smenu-list:hover .icons-smenu-newstr, .second-menu .on .icons-smenu-newstr {
+    background-position: -40px -140px;
+}
+
+/*发布加工单*/
+.icons-smenu-releasewo {
+    background-position: -140px -40px;
+}
+
+.smenu-list:hover .icons-smenu-releasewo, .second-menu .on .icons-smenu-releasewo {
+    background-position: -140px -140px;
+}
+
+/*申请提货*/
+.icons-smenu-applyfd {
+    background-position: -240px -40px;
+}
+
+.smenu-list:hover .icons-smenu-applyfd, .second-menu .on .icons-smenu-applyfd {
+    background-position: -240px -140px;
+}
+
+.customorders-wrap .dib {
+    display: inline-block;
+}
+
+.customorders-wrap .w43 {
+    width: 43%;
+}
+
+.customorders-wrap .w92 {
+    width: 92%;
+}
+
+.customorders-wrap .btn-adddetail {
+    background-color: #005eff;
+}
+
+.customorders-wrap .lh36 {
+    line-height: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.customorders-wrap .vabt {
+    vertical-align: bottom;
+}
+
+.customorders-wrap .taright {
+    text-align: right;
+}
+
+.customorders-wrap .search-content > li:last-child, .customorders-wrap .simult-cont > li:last-child {
+    border-bottom: none;
+}
+
+.cutmwrap .business-info .add-file {
+    width: 72%;
+    margin: 0 auto;
+}
+
+.customorders-wrap .business-info li > p > input.w20 {
+    width: 20%;
+}
+
+.customorders-wrap .ul-list-class > .list-class > .list-class-title input {
+    background-color: #e5eaf8;
+    vertical-align: middle;
+}
+
+.customorders-wrap .details-list {
+    padding: 40px;
+    background-color: white;
+}
+/*输入框搜索开始*/
+.customorders-wrap .custom-list-class .search {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.customorders-wrap .custom-list-class .search-input {
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.customorders-wrap .release-list-class .search, .customorders-wrap .apply-list-class .search {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.customorders-wrap .release-list-class .search .search-box, .customorders-wrap .apply-list-class .search .search-box {
+    margin-left: 5px;
+}
+
+.customorders-wrap .release-list-class .search-box .search-input, .customorders-wrap .apply-list-class .search-box .search-input {
+    height: 28px;
+    line-height: 28px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #babbc3;
+}
+/*输入框搜索开始*/
+
+/*新增入库页面title*/
+.customorders-wrap .ul-list-class .cust-li {
+    background-color: #e5eaf8;
+}
+
+.customorders-wrap .ul-list-class .cust-li > div {
+    float: left;
+    padding-left: 0.5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.customorders-wrap .ul-list-class .cust-li > div > label {
+    line-height: 28px;
+    padding: 6px 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.customorders-wrap .ul-list-class .cust-li > div > .simult-select {
+    height: 40px;
+}
+
+.customorders-wrap .ul-list-class .cust-li > div > .simult-select > .simult-input {
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.customorders-wrap .ul-list-class .cust-li > div > .simult-select > .simult-input > .simult-arrow {
+    top: 15px;
+}
+
+.customorders-wrap .ul-list-class .cust-li > div > .simult-select > .simult-cont {
+    top: 36px;
+}
+
+.customorders-wrap .ul-list-class .cust-li > div input {
+    background: none;
+}
+
+.customorders-wrap .bottom-line {
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.customorders-wrap .bottom-line:hover {
+    border: none;
+    border-bottom: 1px solid #babbc3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.customorders-wrap .neg20 {
+    margin-top: -20px;
+}
+/*新增入库页面title*/
+/*发布加工单开始*/
+.customorders-wrap .releaseware-wrap > ul > li label {
+    text-align: right;
+}
+
+.customorders-wrap .releaseware, .customorders-wrap .applyfdlytitle {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.customorders-wrap .releaseware li > p > input, .customorders-wrap .applyfdlytitle li > p > input {
+    width: 60%;
+    height: 28px;
+    line-height: 28px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #babbc3;
+    padding-left: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.customorders-wrap .releaseware li > p > input.pricewidth {
+    width: 20%;
+    margin-left: 5px;
+}
+
+.customorders-wrap .releaseware li > p > label, .customorders-wrap .applyfdlytitle li > p > label {
+    display: inline-block;
+    text-align: right;
+}
+
+.customorders-wrap .releaseware > ul > li, .customorders-wrap .applyfdlytitle > ul > li {
+    margin-bottom: 15px;
+}
+
+.customorders-wrap .releaseware .pro-method, .customorders-wrap .applyfdlytitle .pro-method {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.customorders-wrap .releaseware .pro-method li, .customorders-wrap .applyfdlytitle .pro-method li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 26px;
+    font-size: 14px;
+    border: 1px solid #babbc3;
+    margin-right: 1%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.customorders-wrap .releaseware .pro-method li:hover {
+    border: 1px solid #2876fd;
+    color: #2876fd;
+}
+
+.customorders-wrap .releaseware .pro-method li.on, .customorders-wrap .applyfdlytitle .pro-method li.on {
+    color: #fff;
+    background-color: #2876fd;
+    border: 1px solid #2876fd;
+}
+
+.customorders-wrap .turn-method {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #babbc3;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customorders-wrap .turn-method.on {
+    color: #fff;
+    background-color: #2876fd;
+    border: 1px solid #2876fd;
+}
+
+.customorders-wrap .releaseware .remarks, .customorders-wrap .applyfdlytitle .remarks {
+    line-height: 28px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #babbc3;
+    padding-left: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 3px;
+}
+
+.customorders-wrap .business-info li > p > label.w15 {
+    width: 15%;
+}
+
+.customorders-wrap .business-info li > p > label.w24 {
+    width: 24%;
+}
+
+.customorders-wrap .business-info.just-info li > p > label {
+    width: 26.5%;
+}
+
+.customorders-wrap .custom-list-class > .custom-list-classdd > div.lh40 {
+    height: 40px;
+    line-height: 40px;
+}
+
+.customorders-wrap .tips-bubble {
+    white-space: nowrap;
+    line-height: 24px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff6a00;
+    font-size: 12px;
+    -webkit-border-radius: 10px 5px;
+    border-radius: 10px 5px;
+    position: absolute;
+    left: 18px;
+    bottom: 40px;
+}
+
+.customorders-wrap .tips-bubble.package-wrap-tg {
+    background-color: #1bb869;
+    cursor: pointer;
+    left: -28px;
+    display: none;
+}
+
+.customorders-wrap .tips-bubble > span {
+    color: #fff;
+}
+
+.customorders-wrap .arrow.package {
+    left: 42px;
+}
+
+.customorders-wrap .tips-bubble > .arrow {
+    position: absolute;
+    bottom: -4px;
+    left: 6px;
+    cursor: pointer;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #ff6a00;
+    -webkit-transform: rotateZ(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotateZ(45deg);
+}
+
+.customorders-wrap .tips-bubble > .arrow.package-tg {
+    border-bottom: 10px solid #1bb869;
+    left: 24px;
+}
+/*合包*/
+.customorders-wrap .put-togt {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1bb869;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    font-size: 12px;
+}
+
+.customorders-wrap .put-togt .del-line {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6a00;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 8px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+/*贴膜要求*/
+.customorders-wrap .film-req > li > div {
+    border: 1px solid #2876fd;
+}
+
+.customorders-wrap .out-sourcing > span {
+    font-size: 14px;
+    color: #0F1533;
+}
+
+.customorders-wrap .custom-list-class > li.custom-list-classdd > div {
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+
+.customorders-wrap .custom-list-class > li.custom-list-classdd > div.ie-pb6 {
+    padding-top: 6px\9;
+}
+
+.customorders-wrap .custom-list-class > li.custom-list-classdd > div > input {
+    height: 37px;
+    line-height: 37px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.customorders-wrap .custom-list-class > li.custom-list-classdd > div .simult-input {
+    height: 38px;
+    line-height: 38px;
+}
+
+.customorders-wrap .custom-list-class > li.custom-list-classdd > div .simult-arrow {
+    top: 15px;
+}
+
+.customorders-wrap .list-classdd.text-alt .txt-input {
+    vertical-align: bottom;
+}
+
+.customorders-wrap .ml12 {
+    margin-left: 12px;
+}
+
+.customorders-wrap .ml28 {
+    margin-left: 28px;
+}
+
+.customorders-wrap .ml40 {
+    margin-left: 40px;
+}
+/*公差样式开始*/
+.customorders-wrap .len-tol {
+    width: 25%;
+    display: inline-block;
+    height: 28px;
+    border: 1px solid  #babbc3;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding-left: 1px;
+}
+
+.customorders-wrap .len-tol input.txt-input {
+    width: 45%;
+    border: none;
+    height: 25px;
+    margin-top: 1px;
+}
+/*公差样式结束*/
+/*发布加工单结束*/
+
+
+/*申请提货页面开始*/
+.customorders-wrap .apply-total > div {
+    line-height: 22px;
+    padding: 6px 0;
+    padding-left: .5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.customorders-wrap .business-info.cost-apply li > p > label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+.customorders-wrap .business-info.cost-apply li > p > label.w15 {
+    width: 15%;
+}
+
+.customorders-wrap .business-info.cost-apply .icon-set-clear {
+    right: 10%;
+}
+
+.customorders-wrap .applyfdlytitle .pro-method .dlymtd-self, .customorders-wrap .applyfdlytitle .pro-method .dlymtd-other {
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 5%;
+}
+
+.customorders-wrap .business-info li > div > label.w30 {
+    width: 30%;
+}
+
+.customorders-wrap .txt-input.baseline {
+    height: 27px;
+    line-height: 27px;
+    vertical-align: bottom;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.customorders-wrap .txt-input.pdrt6 {
+    padding-left: 6px;
+}
+/*申请提货页面结束*/
+.customorders-wrap .custom-list-class .search-input.seth {
+    height: 38px;
+    padding-left: 0;
+}
+
+.customorders-wrap .search-content li a.pdl5 {
+    padding-left: 5px;
+}
+/*20170811添加*/
+.customorders-wrap .border-bt {
+    outline: none;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #babbc3;
+}
+
+.customorders-wrap .border-bt:hover {
+    outline: none;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #2876fc;
+}
+
+
+/* 20171118 将老版本测试改为迁移 开始*/
+/* .jgs2016_bb {
+    width: 100%;
+    line-height: 40px;
+    color: #333; 
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 40px;
+}
+table {
+    border-spacing: 0;
+}
+caption, th {
+    text-align: left; 
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+input[type="text"].jgs2016_jg_input {
+    height: 28px;
+    line-height: 28px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #babbc3;
+    outline: none;
+    text-indent: 10px;
+    vertical-align: middle;
+}
+
+.jgs2016_sel {
+
+} */
+
+/* 20171118 将老版本测试改为迁移 结束*/

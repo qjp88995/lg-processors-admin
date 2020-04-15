@@ -1,0 +1,156 @@
+body.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.outlibcode-wrap.print-wrap {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.outlibcode-wrap .btn-print-wrap {
+    text-align: right;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.outlibcode-wrap .btn-print-wrap .btn-print-com {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 12px;
+    color: #fff;
+    background: #317ee8;
+    border: 1px solid #317ee8;
+}
+
+.outlibcode-wrap .mr10 {
+    margin-right: 10px;
+}
+
+.outlibcode-wrap table {
+    width: 100%;
+}
+
+.outlibcode-wrap .content-print-top i.print-logo {
+    display: inline-block;
+    width: 193px;
+    height: 80px;
+    background: url("../images/printlogo.png") no-repeat;
+}
+
+.outlibcode-wrap .content-print-top .com-name {
+    font-size: 28px;
+    margin-left: 25px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.outlibcode-wrap .content-print-top .paymt {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 22px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    right: -36px;
+}
+
+.outlibcode-wrap .content-print-wrap {
+    padding-bottom: 40px;
+}
+
+.outlibcode-wrap .content-print-center .cust-info {
+    font-size: 12px;
+    table-layout: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.outlibcode-wrap .content-print-center .cust-info td {
+    line-height: 24px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.outlibcode-wrap .content-print-center .print-pro-list {
+    table-layout: fixed;
+}
+
+.outlibcode-wrap .content-print-center .print-pro-list th, .outlibcode-wrap .content-print-center .print-pro-list td {
+    height: 38px;
+    line-height: 38px;
+}
+
+.outlibcode-wrap .content-print-center .print-pro-list td {
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.outlibcode-wrap .precaut-wrap {
+    padding: 35px 21px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.outlibcode-wrap .precaut-wrap .precaut-content {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.outlibcode-wrap .content-print-bottom {
+    position: relative;
+}
+
+.outlibcode-wrap .content-print-bottom .bank-receipt {
+    display: inline-block;
+    width: 156px;
+    height: 64px;
+    position: absolute;
+    top: 150px;
+    right: 400px;
+}
+
+.outlibcode-wrap .lg-seal {
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    top: 26px;
+}
+
+.outlibcode-wrap .lg-seal img {
+    display: inline-block;
+    width: 166px;
+    height: 170px;
+}
+
+.outlibcode-wrap .col-label {
+    color: #5C6596;
+}
+
+.outlibcode-wrap .bg-title {
+    background: #e5eaf8;
+}
+
+.outlibcode-wrap .set-input {
+    width: 80%;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.outlibcode-wrap .table-border {
+    border: 1px solid #e5eaf8;
+    border-top: none;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="乐钢网是钢铁电商服务平台提供一站式的钢铁供应链服务平台。"> 
+	<meta name="keywords" content="乐钢网是集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品综合性电商服务平台。">
+	<title>乐钢加工管理系统</title>
+	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<!-- <link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/informat.css">
+	<link rel="stylesheet" href="../css/laydate.css">
+	<link rel="stylesheet" href="../css/ieset.css"> -->
+
+	<!-- 20171115所有css配置 开始 -->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/accessmgt.css">
+	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="../css/financ.css">
+	<link rel="stylesheet" href="../css/ieset.css">
+	<link rel="stylesheet" href="../css/informat.css">
+	<link rel="stylesheet" href="../css/laydate.css">
+	<link rel="stylesheet" href="../css/other.css">
+	<link rel="stylesheet" href="../css/outlibcode.css">
+	<link rel="stylesheet" href="../css/pcpro.css">
+	<link rel="stylesheet" href="../css/popup.css">
+	<link rel="stylesheet" href="../css/primgt.css">
+	<link rel="stylesheet" href="../css/proinstruct.css">
+	<link rel="stylesheet" href="../css/proqlttrack.css">
+	<link rel="stylesheet" href="../css/reportmgt.css">
+	<link rel="stylesheet" href="../css/wastemgt.css">
+	<link rel="stylesheet" href="../css/style2020.css">
+	<!-- 20171115所有css配置 结束 -->
+	<style>
+		
+	</style>
+</head>
+<body class="clearfix">
+	<!-- 右侧内容开始 -->
+	<div class="rightcont infomat-wrap">
+		<div class="wrapcontent reportmgt">
+			<!-- search 开始 -->
+			<div class="search clearfix">
+				<div class="shipper-unit fl w12 mr2 search-box">
+					<input type="text" placeholder="登录账号/手机号" class="search-input">
+				</div>
+				<div class="shipper-unit fl w12 mr2 search-box">
+					<input type="text" placeholder="公司名称" class="search-input si-pointer" readonly="">
+					<ul class="search-content hide mt5" >
+						<li title="华冶A区">华冶A区</li>
+                   		<li title="华冶B区">华冶B区</li>
+            		</ul>
+				</div>
+				<div class="shipper-unit fl w15 mr2 search-box">
+					<input type="text" placeholder="实名认证" class="search-input si-pointer" readonly="">
+					<ul class="search-content hide mt5" >
+						<li title="全部">全部</li>
+                   		<li title="已认证">已认证</li>
+                   		<li title="未认证">未认证</li>
+            		</ul>
+				</div>
+			
+				<div class="fl w16">
+					<a href="javascript:void(0);" class="search-com btn-search mr2">查询</a>
+					<a href="javascript:void(0);" class="search-com btn-print">重置</a>
+				</div>
+				<div class="fr">
+					<a href="javascript:void(0)" onclick="addInfo()" class="search-com btn-adddetail">新增</a>
+				</div>
+			</div>
+			<!-- search 结束 -->
+
+
+			<!-- 加工订单表开始 -->
+			<div class="table-list">
+				<ul class="list-attribt pdt20">
+					<div class="n18_tip" style="margin:0 40px 20px  ">提示：显示出加工商自行添加的客户单位信息</div>
+					<li class="clearfix list-title-bd">
+						<div class="w18">
+							登录账号
+						</div>
+						<div class="w20">
+							公司名称
+						</div>
+						<div class="w10">
+							企业性质
+						</div>
+						<div class="w12">
+							短信接收号码
+						</div>
+						<div class="w12">
+							认证授权书
+						</div>
+						<div class="w8">
+							创建人
+							</div>
+						<div class="w12">
+							创建时间
+						</div>
+						<div class="w8 tc">
+							详情
+						</div>
+					</li>
+				</ul>
+				<ul class="list-class" id="team-list">
+					<li class="list-classdd clearfix list-cont-bd">
+						<div class="w18 pdtb17">
+							201801102337 <span class="idAuthenty">已认证</span>
+						</div>
+						<div class="w20 pdtb17">
+							上海天长地久婚庆策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							外资
+						</div>
+						<div class="w12 pdtb17">
+							13012345678
+						</div>
+						<div class="w12 pdtb17 green">
+							已收回
+						</div>
+						<div class="w8 pdtb17">
+							大张伟
+						</div>
+						<div class="w12 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w8 tc pdtb17">
+							<a href="javascript:void(0)" onclick="showMore(this)">查看</a>   
+						</div>
+						<div class="checkBar btf1 bgf9 ">
+							<div class="pt20 pb20 ovh">
+								<div class="fl w15 tr pb5">公司税号：</div>
+								<div class="fl w35 pb5">123456789012345B</div>
+								<div class="fl w15 tr pb5">联系人：</div>
+								<div class="fl w35 pb5">李思思</div>
+								<div class="fl w15 tr pb5">注册地址：</div>
+								<div class="fl w35 pb5">上海-上海市-宝山区-上海市宝山区共祥路111号B-209</div>
+								<div class="fl w15 tr pb5">联系地址：</div>
+								<div class="fl w35 pb5">上海-上海市-宝山区-上海市宝山区共祥路111号B-209</div>
+								<div class="fl w15 tr pb5">开户银行：</div>
+								<div class="fl w35 pb5">中国农业银行上海宝山支行</div>
+								<div class="fl w15 tr pb5">固定电话：</div>
+								<div class="fl w35 pb5">021-12345678</div>
+								<div class="fl w15 tr pb5">银行账号：</div>
+								<div class="fl w35 pb5">123456789012345B</div>
+								<div class="fl w15 tr pb5">营业执照：</div>
+								<div class="fl w35 pb5"><a href="##">营业执照.jpg</a></div>
+							</div>
+						</div>						
+					</li><li class="list-classdd clearfix list-cont-bd">
+						<div class="w18 pdtb17">
+							201801102337 <span class="idAuthenty no">未认证</span>
+						</div>
+						<div class="w20 pdtb17">
+							上海天长地久婚庆策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							外资
+						</div>
+						<div class="w12 pdtb17">
+							13012345678
+						</div>
+						<div class="w12 pdtb17">
+							未收回
+						</div>
+						<div class="w8 pdtb17">
+							大张伟
+						</div>
+						<div class="w12 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w8 tc pdtb17">
+							<a href="javascript:void(0)" onclick="showMore(this)">查看</a>     
+						</div>
+						<div class="checkBar btf1 bgf9 ">
+							<div class="pt20 pb20 ovh">
+								<div class="fl w15 tr pb5">公司税号：</div>
+								<div class="fl w35 pb5">123456789012345B</div>
+								<div class="fl w15 tr pb5">联系人：</div>
+								<div class="fl w35 pb5">李思思</div>
+								<div class="fl w15 tr pb5">注册地址：</div>
+								<div class="fl w35 pb5">上海-上海市-宝山区-上海市宝山区共祥路111号B-209</div>
+								<div class="fl w15 tr pb5">联系地址：</div>
+								<div class="fl w35 pb5">上海-上海市-宝山区-上海市宝山区共祥路111号B-209</div>
+								<div class="fl w15 tr pb5">开户银行：</div>
+								<div class="fl w35 pb5">中国农业银行上海宝山支行</div>
+								<div class="fl w15 tr pb5">固定电话：</div>
+								<div class="fl w35 pb5">021-12345678</div>
+								<div class="fl w15 tr pb5">银行账号：</div>
+								<div class="fl w35 pb5">123456789012345B</div>
+								<div class="fl w15 tr pb5">营业执照：</div>
+								<div class="fl w35 pb5"><a href="##">营业执照.jpg</a></div>
+							</div>
+						</div>						
+					</li>
+
+			    </ul>
+
+
+
+			  
+			     <!-- 页码部分开始 -->
+			    <div class="pageWrap">
+				            <a class="pagegray" href="javascript:void(0);" onclick="return previousPage()">&lt;</a>
+				            <a class="pagegray" onclick="javascript:return goToPage(1)">1</a>
+				            <a class="pagegray current" onclick="javascript:return goToPage(2)">2</a>
+				            <a class="pagegray" onclick="javascript:return goToPage(3)">3</a>
+				            <a class="pagegray" onclick="javascript:return goToPage(4)">4</a>
+				            <a class="pagegray" onclick="javascript:return goToPage(5)">5</a>
+				            <a class="pagegray" onclick="javascript:return goToPage(6)">6</a>&nbsp;.&nbsp;.&nbsp;.&nbsp;
+				            <a href="javascript:void(0);" onclick="return nextPage()" class="pagegray">&gt;</a>当前页数1/31&nbsp;页&nbsp;共 &nbsp;303&nbsp;条记录&nbsp;&nbsp;
+				            <span>每页</span>
+				            <select name="" id="" class="pageWrapinput">
+				              <option value="">10</option>
+				              <option value="">20</option>
+				              <option value="">30</option>
+				              <option value="">50</option>
+				            </select>
+				            跳至&nbsp;
+				            <input type="text" id="targetPage" name="targetPage" class="pageWrapinput">&nbsp;页&nbsp;
+				            <input type="button" id="turnPageBtn" class="page-wrap ml1" value="确定">
+	       		 </div>
+			    <!-- 页面部分结束 -->
+			</div>
+			<!-- 加工订单表结束 -->
+
+		</div>
+	</div>
+	<!-- 右侧内容结束 -->
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/jquery.placeholder.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/infomatleftbar.js?ver=1"></script>
+	<script src="../js/topbar.js"></script>
+	<script src="../js/laydate.js"></script>
+	<script src="../js/infomat.js"></script>
+	<script src="../js/layer.js"></script>
+	<script>
+		$(function(){
+			var leftbar = $(".leftbar");
+			var topbar = $(".topbar");
+			
+			$("body").prepend(topbar);
+			$("body").prepend(leftbar);
+			$(".unitMaintain").addClass('on');
+		})
+
+		function showMore(obj){
+			var myobj=$(obj).parents(".list-classdd").find(".checkBar");
+			if(myobj.css("display")=="none"){
+				myobj.show();
+				$(obj).text("收起");
+			}else{
+				myobj.hide();
+				$(obj).text("查看");
+			}
+		}
+
+		function addInfo(){
+			    window.location='addUnitMain.html';
+		}
+
+	</script>
+</body>
+</html>

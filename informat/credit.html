@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="乐钢网是钢铁电商服务平台提供一站式的钢铁供应链服务平台。"> 
+	<meta name="keywords" content="乐钢网是集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品综合性电商服务平台。">
+	<title>乐钢加工管理系统</title>
+	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<!-- <link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/informat.css">
+	<link rel="stylesheet" href="../css/laydate.css">
+	<link rel="stylesheet" href="../css/ieset.css"> -->
+
+	<!-- 20171115所有css配置 开始 -->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/accessmgt.css">
+	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="../css/financ.css">
+	<link rel="stylesheet" href="../css/ieset.css">
+	<link rel="stylesheet" href="../css/informat.css">
+	<link rel="stylesheet" href="../css/laydate.css">
+	<link rel="stylesheet" href="../css/other.css">
+	<link rel="stylesheet" href="../css/outlibcode.css">
+	<link rel="stylesheet" href="../css/pcpro.css">
+	<link rel="stylesheet" href="../css/popup.css">
+	<link rel="stylesheet" href="../css/primgt.css">
+	<link rel="stylesheet" href="../css/proinstruct.css">
+	<link rel="stylesheet" href="../css/proqlttrack.css">
+	<link rel="stylesheet" href="../css/reportmgt.css">
+	<link rel="stylesheet" href="../css/wastemgt.css">
+	<link rel="stylesheet" href="../css/style2020.css">
+    <!-- 20171115所有css配置 结束 -->
+    <link rel="stylesheet" href="../css/credit.css">
+	<style>
+        .search .form {
+            padding-left: 24px;
+        }
+        .search .form-item {
+            margin-right: 80px;
+        }
+        .search .form-item-label {
+            width: 70px;
+        }
+        .search .form-item-control {
+            margin-left: 5px;
+            width: 230px;
+        }
+        .checkBar {
+            background-color: rgb(247, 250, 255);
+            padding: 0 !important;
+        }
+        .checkBar-item {
+            padding: 18px 0;
+            border-top: 1px solid rgb(236, 239, 243);
+        }
+	</style>
+</head>
+<body class="clearfix">
+	<!-- 右侧内容开始 -->
+	<div class="rightcont infomat-wrap credit">
+		<div class="wrapcontent reportmgt">
+			<!-- search 开始 -->
+			<div class="search">
+                <div class="form">
+                    <div class="form-item">
+                        <div class="form-item-label">授信单位：</div>
+                        <div class="form-item-control" style="position: relative;">
+							<input id="searchCreditUnitInput" type="text" placeholder="公司名称" class="search-input" />
+							<ul id="searchCreditUnitSeletor" class="search-content hide mt5">
+							</ul>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item-label">授信状态：</div>
+                        <div class="form-item-control" style="width: 240px; height: 100%;">
+                            <input type="hidden" name="" id="searchCreditStatusInput" value="" />
+                            <div class="radio-group" id="searchCreditStatus">
+                                <button type="button" class="button-primary" style="margin-right: 14px;" data-value="">全部</button>
+                                <button type="button" class="button-default" style="margin-right: 14px;" data-value="1">授信中</button>
+                                <button type="button" class="button-default" data-value="2">已过期</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <button type="button" class="button-success" style="margin-right: 14px;" onclick="onSearchSubmit()">查询</button>
+                        <button type="button" class="button-gray" style="margin-right: 14px;" onclick="onSearchReset()">重置</button>
+                        <button type="button"  class="button-primary" onclick="addUnit()">新增</button>
+                    </div>
+                </div>
+			</div>
+			<!-- search 结束 -->
+
+
+			<!-- 加工订单表开始 -->
+			<div class="table-list">
+				<ul class="list-attribt pdt20">
+					<li class="clearfix list-title-bd">
+						<div class="w20">
+							授信单位
+						</div>
+						<div class="w10">
+							授信额度
+						</div>
+						<div class="w20">
+							授信期限
+						</div>
+						<div class="w12">
+							授信状态
+						</div>
+						<div class="w10">
+							创建人
+						</div>
+						<div class="w14">
+							创建时间
+						</div>
+						<div class="w10">
+							操作
+						</div>
+					</li>
+				</ul>
+				<ul class="list-class" id="team-list">
+					<li class="list-classdd clearfix list-cont-bd">
+						<div class="w20 pdtb17">
+							上海地久天长科技策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							￥10,000.00
+						</div>
+						<div class="w20 pdtb17">
+							2020-04-09至2020-05-30
+						</div>
+						<div class="w12 pdtb17">
+							<span >授信中</span>
+						</div>
+						<div class="w10 pdtb17">
+							大张伟
+						</div>
+						<div class="w14 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w10 pdtb17">
+                            <a href="javascript:void(0)" style="margin-right: 16px;" onclick="editUnit({ id: '1', unit: '上海地久天长科技策划有限公司', unitId: '1', limit: '10000', limitOther: '', dateStart: '2020-04-09', dateEnd: '2020-05-30' })">修改</a>
+							<a href="javascript:void(0)" onclick="showMore(this)">记录</a>
+						</div>
+						<div class="checkBar">
+							<div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信额度：</div>
+								<div class="fl w13 pb5">￥7,000.00</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">￥8,000.00</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+                            </div>
+                            <div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信期限：</div>
+								<div class="fl w13 pb5">2020-04-08至2020-05-30</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">2020-04-08至2020-04-30</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+							</div>
+						</div>						
+                    </li>
+                    <li class="list-classdd clearfix list-cont-bd">
+						<div class="w20 pdtb17">
+							上海地久天长科技策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							￥10,000.00
+						</div>
+						<div class="w20 pdtb17">
+							2020-04-09至2020-05-30
+						</div>
+						<div class="w12 pdtb17">
+							<span >授信中</span>
+						</div>
+						<div class="w10 pdtb17">
+							大张伟
+						</div>
+						<div class="w14 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w10 pdtb17">
+                            <a href="javascript:void(0)" style="margin-right: 16px;" onclick="editUnit({ id: '1', unit: '上海地久天长科技策划有限公司', unitId: '1', limit: '10000', limitOther: '', dateStart: '2020-04-09', dateEnd: '2020-05-30' })">修改</a>
+							<a href="javascript:void(0)" onclick="showMore(this)">记录</a>
+						</div>
+						<div class="checkBar">
+							<div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信额度：</div>
+								<div class="fl w13 pb5">￥7,000.00</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">￥8,000.00</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+                            </div>
+                            <div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信期限：</div>
+								<div class="fl w13 pb5">2020-04-08至2020-05-30</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">2020-04-08至2020-04-30</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+							</div>
+						</div>						
+                    </li>
+                    <li class="list-classdd clearfix list-cont-bd">
+						<div class="w20 pdtb17">
+							上海地久天长科技策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							￥10,000.00
+						</div>
+						<div class="w20 pdtb17">
+							2020-04-09至2020-05-30
+						</div>
+						<div class="w12 pdtb17">
+							<span >授信中</span>
+						</div>
+						<div class="w10 pdtb17">
+							大张伟
+						</div>
+						<div class="w14 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w10 pdtb17">
+                            <a href="javascript:void(0)" style="margin-right: 16px;" onclick="editUnit({ id: '1', unit: '上海地久天长科技策划有限公司', unitId: '1', limit: '10000', limitOther: '', dateStart: '2020-04-09', dateEnd: '2020-05-30' })">修改</a>
+							<a href="javascript:void(0)" onclick="showMore(this)">记录</a>
+						</div>
+						<div class="checkBar">
+							<div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信额度：</div>
+								<div class="fl w13 pb5">￥7,000.00</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">￥8,000.00</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+                            </div>
+                            <div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信期限：</div>
+								<div class="fl w13 pb5">2020-04-08至2020-05-30</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">2020-04-08至2020-04-30</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+							</div>
+						</div>						
+                    </li>
+                    <li class="list-classdd clearfix list-cont-bd">
+						<div class="w20 pdtb17">
+							上海地久天长科技策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							￥10,000.00
+						</div>
+						<div class="w20 pdtb17">
+							2020-04-09至2020-05-30
+						</div>
+						<div class="w12 pdtb17">
+							<span >授信中</span>
+						</div>
+						<div class="w10 pdtb17">
+							大张伟
+						</div>
+						<div class="w14 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w10 pdtb17">
+                            <a href="javascript:void(0)" style="margin-right: 16px;" onclick="editUnit({ id: '1', unit: '上海地久天长科技策划有限公司', unitId: '1', limit: '10000', limitOther: '', dateStart: '2020-04-09', dateEnd: '2020-05-30' })">修改</a>
+							<a href="javascript:void(0)" onclick="showMore(this)">记录</a>
+						</div>
+						<div class="checkBar">
+							<div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信额度：</div>
+								<div class="fl w13 pb5">￥7,000.00</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">￥8,000.00</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+                            </div>
+                            <div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信期限：</div>
+								<div class="fl w13 pb5">2020-04-08至2020-05-30</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">2020-04-08至2020-04-30</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+							</div>
+						</div>						
+                    </li>
+                    <li class="list-classdd clearfix list-cont-bd">
+						<div class="w20 pdtb17">
+							上海地久天长科技策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							￥10,000.00
+						</div>
+						<div class="w20 pdtb17">
+							2020-04-09至2020-05-30
+						</div>
+						<div class="w12 pdtb17">
+							<span >授信中</span>
+						</div>
+						<div class="w10 pdtb17">
+							大张伟
+						</div>
+						<div class="w14 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w10 pdtb17">
+                            <a href="javascript:void(0)" style="margin-right: 16px;" onclick="editUnit({ id: '1', unit: '上海地久天长科技策划有限公司', unitId: '1', limit: '10000', limitOther: '', dateStart: '2020-04-09', dateEnd: '2020-05-30' })">修改</a>
+							<a href="javascript:void(0)" onclick="showMore(this)">记录</a>
+						</div>
+						<div class="checkBar">
+							<div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信额度：</div>
+								<div class="fl w13 pb5">￥7,000.00</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">￥8,000.00</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+                            </div>
+                            <div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信期限：</div>
+								<div class="fl w13 pb5">2020-04-08至2020-05-30</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">2020-04-08至2020-04-30</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+							</div>
+						</div>						
+                    </li>
+                    <li class="list-classdd clearfix list-cont-bd">
+						<div class="w20 pdtb17">
+							上海地久天长科技策划有限公司
+						</div>
+						<div class="w10 pdtb17">
+							￥10,000.00
+						</div>
+						<div class="w20 pdtb17">
+							2020-04-09至2020-05-30
+						</div>
+						<div class="w12 pdtb17">
+							<span >授信中</span>
+						</div>
+						<div class="w10 pdtb17">
+							大张伟
+						</div>
+						<div class="w14 pdtb17">
+							2020-03-24 11:11:11
+						</div>
+						<div class="w10 pdtb17">
+                            <a href="javascript:void(0)" style="margin-right: 16px;" onclick="editUnit({ id: '1', unit: '上海地久天长科技策划有限公司', unitId: '1', limit: '10000', limitOther: '', dateStart: '2020-04-09', dateEnd: '2020-05-30' })">修改</a>
+							<a href="javascript:void(0)" onclick="showMore(this)">记录</a>
+						</div>
+						<div class="checkBar">
+							<div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信额度：</div>
+								<div class="fl w13 pb5">￥7,000.00</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">￥8,000.00</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+                            </div>
+                            <div class="ovh checkBar-item">
+								<div class="fl w10 tr pb5">原授信期限：</div>
+								<div class="fl w13 pb5">2020-04-08至2020-05-30</div>
+								<div class="fl w8 tr pb5">调整为：</div>
+								<div class="fl w12 pb5">2020-04-08至2020-04-30</div>
+								<div class="fl w10 tr pb5">修改人：</div>
+								<div class="fl w10 pb5">许阿福</div>
+								<div class="fl w10 tr pb5">修改时间：</div>
+								<div class="fl w20 pb5">2020-03-28 18:28:28</div>
+							</div>
+						</div>						
+                    </li>
+			    </ul>
+
+
+
+			  
+			     <!-- 页码部分开始 -->
+			    <div class="pageWrap">
+                    <a class="pagegray" href="javascript:void(0);" onclick="return previousPage()">&lt;</a>
+                    <a class="pagegray" onclick="javascript:return goToPage(1)">1</a>
+                    <a class="pagegray current" onclick="javascript:return goToPage(2)">2</a>
+                    <a class="pagegray" onclick="javascript:return goToPage(3)">3</a>
+                    <a class="pagegray" onclick="javascript:return goToPage(4)">4</a>
+                    <a class="pagegray" onclick="javascript:return goToPage(5)">5</a>
+                    <a class="pagegray" onclick="javascript:return goToPage(6)">6</a>&nbsp;.&nbsp;.&nbsp;.&nbsp;
+                    <a href="javascript:void(0);" onclick="return nextPage()" class="pagegray">&gt;</a>当前页数1/31&nbsp;页&nbsp;共 &nbsp;303&nbsp;条记录&nbsp;&nbsp;
+                    <span>每页</span>
+                    <select name="" id="" class="pageWrapinput">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">30</option>
+                        <option value="">50</option>
+                    </select>
+                    跳至&nbsp;
+                    <input type="text" id="targetPage" name="targetPage" class="pageWrapinput">&nbsp;页&nbsp;
+                    <input type="button" id="turnPageBtn" class="page-wrap ml1" value="确定">
+	       		 </div>
+			    <!-- 页面部分结束 -->
+			</div>
+			<!-- 加工订单表结束 -->
+
+		</div>
+        <div class="modal-wrap" id="modalWrap">
+            <div class="modal" id="modal">
+                <div class="modal-title">
+                    <span id="modalTitle">添加</span>授信单位
+                </div>
+                <div class="modal-content">
+                    <div class="form">
+                        <input id="modalCreditIdInput" type="hidden" name="id" value="" />
+                        <div class="form-item">
+                            <div class="form-item-label">授信单位：</div>
+                            <div class="form-item-control" style="position: relative;">
+								<input id="modalCreditUnitInput" type="text" placeholder="公司名称" class="search-input form-input" />
+								<ul id="modalCreditUnitSeletor" class="search-content hide mt5">
+								</ul>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-label">授信额度：</div>
+                            <div class="form-item-control">
+                                <input type="hidden" name="" id="modalCreditLimitInput" value="" />
+                                <div class="radio-group credit-limit" id="modalCreditLimit">
+                                    <button type="button" class="button-primary spacing" data-value="10000">￥10,000</button>
+                                    <button type="button" class="button-default spacing" data-value="30000">￥30,000</button>
+                                    <button type="button" class="button-default spacing" data-value="50000">￥50,000</button>
+                                    <button type="button" class="button-default" data-value="70000">￥70,000</button>
+                                    <div style="display: inline-block; margin-top: 6px; width: 100%;">
+                                        <button type="button" class="button-default spacing" style="font-size: 12px; vertical-align: middle;" data-value="other">自定义额度</button>
+                                        <input id="modalCreditLimitOtherInput" type="text" class="form-input" style="width: 84px; vertical-align: middle;" readonly />
+                                        <span style="font-size: 14px; margin-left: 4px; vertical-align: middle;">捌萬元整</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-label">授信期限：</div>
+                            <div class="form-item-control">
+                                <input id="modalCreditDateStartInput" type="text" placeholder="年-月-日" class="form-input laydate-icon" style="width: 47%" onclick="laydate({istime: false, format: 'YYYY-MM-DD'})" readonly />
+                                <span>-</span>
+                                <input id="modalCreditDateEndInput" type="text" placeholder="年-月-日" class="form-input laydate-icon" style="width: 47%" onclick="laydate({istime: false, format: 'YYYY-MM-DD'})" readonly />
+                            </div>
+                        </div>
+                        <div class="form-item" style="text-align: center;">
+                            <button type="button" class="button-success" style="margin-left: 10px; margin-right: 10px;" onclick="saveUnit()">保存</button>
+                            <button type="button" class="button-gray" style="margin-left: 10px; margin-right: 10px;" onclick="hideModal()">取消</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-close" onclick="hideModal()">x</div>
+            </div>
+        </div>
+    </div>
+	<!-- 右侧内容结束 -->
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/jquery.placeholder.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/infomatleftbar.js?ver=1"></script>
+	<script src="../js/topbar.js"></script>
+	<script src="../js/laydate.js"></script>
+	<script src="../js/infomat.js"></script>
+	<script src="../js/layer.js"></script>
+	<script>
+		$(function(){
+			var leftbar = $(".leftbar");
+			var topbar = $(".topbar");
+			
+			$("body").prepend(topbar);
+			$("body").prepend(leftbar);
+			$(".credit").addClass('on');
+		})
+
+		function showMore(obj){
+			var myobj=$(obj).parents(".list-classdd").find(".checkBar");
+			if(myobj.css("display")=="none"){
+				myobj.show();
+				$(obj).text("收起");
+			}else{
+				myobj.hide();
+				$(obj).text("记录");
+			}
+        }
+
+        // 搜索框表单字段
+        const searchFormData = {
+            unit: '',
+			unitId: '',
+            status: '',
+        };
+
+        // 搜索框
+        const searchCreditStatusElem = document.querySelector('#searchCreditStatus'); // 状态单选按钮组
+        const searchCreditUnitInputElem = document.querySelector('#searchCreditUnitInput'); // 授信单位输入框
+        const searchCreditStatusInputElem = document.querySelector('#searchCreditStatusInput'); // 授信状态输入框
+        // 数据双向绑定
+        Object.defineProperties(searchFormData, {
+            unit: {
+                configurable: true,
+                get: function() {
+                    return searchCreditUnitInputElem.value;
+                },
+                set: function(value) {
+                    searchCreditUnitInputElem.value = value;
+                },
+            },
+            status: {
+                configurable: true,
+                get: function() {
+                    return searchCreditStatusInputElem.value;
+                },
+                set: function(value) {
+                    const nodes = Array.from(searchCreditStatusElem.querySelectorAll('button'));
+                    nodes.forEach(item => {
+                        if (value === item.dataset.value) {
+                            item.classList.contains('button-primary') || item.classList.add('button-primary');
+                            item.classList.contains('button-default') && item.classList.remove('button-default');
+                            searchCreditStatusInputElem.value = item.dataset.value;
+                        } else {
+                            item.classList.contains('button-primary') && item.classList.remove('button-primary');
+                            item.classList.contains('button-default') || item.classList.add('button-default');
+                        }
+                    });
+                },
+            }
+        });
+        searchCreditStatusElem.addEventListener('click', function(e) {
+            const nodes = Array.from(searchCreditStatusElem.querySelectorAll('button'));
+            if (nodes.some(item => item === e.target)) searchFormData.status = e.target.dataset.value;
+        });
+
+        // 点击搜索框的查询
+        function onSearchSubmit() {
+            console.log('当前查询条件：', searchFormData);
+        }
+        // 点击搜索框的重置
+        function onSearchReset() {
+            searchFormData.status = '';
+            searchFormData.unit = '';
+			searchFormData.unitId = '';
+            console.log('重置查询条件');
+        }
+
+        
+        // 模态框元素
+        const modalWrapElem = document.querySelector('#modalWrap');
+        const modalElem = document.querySelector('#modal');
+
+        // 显示模态框
+        function showModal() {
+            modalWrapElem.style.display = 'block';
+        }
+        // 设置模态框标题
+        function setModalTitle(title) {
+            const modalTitleElem = document.querySelector('#modalTitle');
+            modalTitleElem.textContent = title;
+        }
+        // 隐藏模态框
+        function hideModal() {
+            modalWrapElem.style.display = 'none';
+        }
+        modalWrapElem.addEventListener('click', function(e) {
+            initModalFormData();
+            hideModal();
+        });
+        modalElem.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // 模态框中表单字段
+        const modalFormData = {
+            id: '', // ID
+            unit: '', // 授信单位
+			unitId: '', // 授信单位Id
+            limit: '', // 授信额度
+            limitOther: '', // 自定义授信额度
+            dateStart: '', // 授信期限 - 开始
+            dateEnd: '', // 授信期限 - 结束
+        };
+
+        // 模态框元素
+        const modalCreditLimitElem = document.querySelector('#modalCreditLimit'); // 额度单选按钮组
+        const modalCreditIdInputElem = document.querySelector('#modalCreditIdInput'); // ID输入框
+        const modalCreditUnitInputElem = document.querySelector('#modalCreditUnitInput'); // 授信单位输入框
+        const modalCreditLimitInputElem = document.querySelector('#modalCreditLimitInput'); // 授信额度输入框
+        const modalCreditLimitOtherInputElem = document.querySelector('#modalCreditLimitOtherInput'); // 自定义授信额度输入框
+        const modalCreditDateStartInputElem = document.querySelector('#modalCreditDateStartInput'); // 授信期限开始输入框
+        const modalCreditDateEndInputElem = document.querySelector('#modalCreditDateEndInput'); // 授信期限结束输入框
+        // 数据双向绑定
+        Object.defineProperties(modalFormData, {
+            id: {
+                configurable: true,
+                get: function() {
+                    return modalCreditIdInputElem.value;
+                },
+                set: function(value) {
+                    modalCreditIdInputElem.value = value;
+                },
+            },
+            unit: {
+                configurable: true,
+                get: function() {
+                    return modalCreditUnitInputElem.value;
+                },
+                set: function(value) {
+                    modalCreditUnitInputElem.value = value;
+                },
+            },
+            limit: {
+                configurable: true,
+                get: function() {
+                    return modalCreditLimitInputElem.value;
+                },
+                set: function(value) {
+                    const nodes = Array.from(modalCreditLimitElem.querySelectorAll('button'));
+                    nodes.forEach(item => {
+                        if (value === item.dataset.value) {
+                            item.classList.contains('button-primary') || item.classList.add('button-primary');
+                            item.classList.contains('button-default') && item.classList.remove('button-default');
+                            modalCreditLimitInputElem.value = item.dataset.value;
+                        } else {
+                            item.classList.contains('button-primary') && item.classList.remove('button-primary');
+                            item.classList.contains('button-default') || item.classList.add('button-default');
+                        }
+                        // 如果值为自定义
+                        if (value === 'other') {
+                            modalCreditLimitOtherInputElem.readOnly = false;
+                        } else {
+                            modalCreditLimitOtherInputElem.readOnly = true;
+                            modalCreditLimitOtherInputElem.value = '';
+                        }
+                    });
+                },
+            },
+            limitOther: {
+                configurable: true,
+                get: function() {
+                    return modalCreditLimitOtherInputElem.value;
+                },
+                set: function(value) {
+                    modalCreditLimitOtherInputElem.value = value;
+                },
+            },
+            dateStart: {
+                configurable: true,
+                get: function() {
+                    return modalCreditDateStartInputElem.value;
+                },
+                set: function(value) {
+                    modalCreditDateStartInputElem.value = value;
+                },
+            },
+            dateEnd: {
+                configurable: true,
+                get: function() {
+                    return modalCreditDateEndInputElem.value;
+                },
+                set: function(value) {
+                    modalCreditDateEndInputElem.value = value;
+                },
+            },
+        });
+        modalCreditLimitElem.addEventListener('click', function(e) {
+            const nodes = Array.from(modalCreditLimitElem.querySelectorAll('button'));
+            if (nodes.some(item => item === e.target)) modalFormData.limit = e.target.dataset.value;
+        });
+		// 限制自定义额度输入值 必须大于0，且是整数
+		modalCreditLimitOtherInputElem.addEventListener('input', function(e){
+			if (e.target.value) e.target.value = e.target.value.replace(/[^\d]/g,'').replace(/^0/, '');
+		});
+
+        function initModalFormData() {
+            modalFormData.id = '';
+            modalFormData.unit = '';
+			modalFormData.unitId = '';
+            modalFormData.limit = '10000';
+            modalFormData.limitOther = '';
+            modalFormData.dateStart = '';
+            modalFormData.dateEnd = '';
+			modalCreditUnitInputElem.disabled = false; // 修改时授信单位可以编辑
+			modalCreditDateStartInputElem.disabled = false; // 修改时授信期限开始时间可以编辑
+        }
+
+        // 新增授信单位
+        function addUnit() {
+            setModalTitle('新增');
+            initModalFormData();
+            showModal();
+        }
+        // 修改授信单位
+        function editUnit(data) {
+            setModalTitle('修改');
+            modalFormData.id = data.id.toString();
+            modalFormData.unit = data.unit.toString();
+			modalFormData.unitId = data.unitId.toString();
+            modalFormData.limit = data.limit.toString();
+            modalFormData.limitOther = data.limitOther.toString();
+            modalFormData.dateStart = data.dateStart.toString();
+            modalFormData.dateEnd = data.dateEnd.toString();
+			modalCreditUnitInputElem.disabled = true; // 修改时授信单位不可编辑
+			modalCreditDateStartInputElem.disabled = true; // 修改时授信期限开始时间不可编辑
+            showModal();
+        }
+        // 保存授信单位信息
+        function saveUnit(data) {
+            console.log('保存成功');
+            hideModal();
+        }
+
+		// 搜索下拉框数据
+		const selectors = {
+			searchCreditUnits: [],
+			modalCreditUnits: [],
+		};
+		const searchCreditUnitSeletor = document.querySelector('#searchCreditUnitSeletor');
+		const modalCreditUnitSeletor = document.querySelector('#modalCreditUnitSeletor');
+		Object.defineProperties(selectors, {
+			searchCreditUnits: {
+				configurable: true,
+				// 数据格式: [{ id: 1, title: '授信单位' }]
+				set: function(value) {
+					const lis = Array.isArray(value) ? value : [];
+					searchCreditUnitSeletor.innerHTML = '';
+					lis.forEach(item => {
+						const li = document.createElement('li');
+						li.textContent = item.title;
+						li.dataset.id = item.id;
+						searchCreditUnitSeletor.appendChild(li);
+					});
+				},
+			},
+			modalCreditUnits: {
+				configurable: true,
+				// 数据格式: [{ id: 1, title: '授信单位' }]
+				set: function(value) {
+					const lis = Array.isArray(value) ? value : [];
+					modalCreditUnitSeletor.innerHTML = '';
+					lis.forEach(item => {
+						const li = document.createElement('li');
+						li.textContent = item.title;
+						li.dataset.id = item.id;
+						modalCreditUnitSeletor.appendChild(li);
+					});
+				},
+			}
+		});
+		// 当查询框的授信单位输入时，到后台进行查询
+		searchCreditUnitInputElem.addEventListener('input', function(e) {
+			selectors.searchCreditUnits = [
+				{ id: 1, title: '上海乐刚网供应链股份有限公司' },
+				{ id: 2, title: '上海华冶集团股份有限公司' },
+			];
+		});
+		// 当模态框的授信单位输入时，到后台进行查询
+		modalCreditUnitInputElem.addEventListener('input', function(e) {
+			selectors.modalCreditUnits = [
+				{ id: 1, title: '上海乐刚网供应链股份有限公司' },
+				{ id: 2, title: '上海华冶集团股份有限公司' },
+			];
+		});
+		// 搜索框 - 点击下拉框的选项时设置授信单位ID
+		searchCreditUnitSeletor.addEventListener('click', function(e) {
+			const lis = Array.from(searchCreditUnitSeletor.querySelectorAll('li'));
+			if (lis.some(item => item === e.target)) searchFormData.unitId = e.target.dataset.id;
+		});
+		// 模态框 - 点击下拉框的选项时设置授信单位ID
+		modalCreditUnitSeletor.addEventListener('click', function(e) {
+			const lis = Array.from(modalCreditUnitSeletor.querySelectorAll('li'));
+			if (lis.some(item => item === e.target)) modalCreditUnitSeletor.unitId = e.target.dataset.id;
+		});
+	</script>
+</body>
+</html>

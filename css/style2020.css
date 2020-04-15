@@ -1,0 +1,63 @@
+/*开发文件的路径要改成  ../../images/common/u4862.png   */
+
+.procChartCont{z-index:1;position:absolute;background-color: #fff;filter:drop-shadow(0px 0px 20px rgba(0,0,0,0.2));display: none;min-width: 660px;cursor: text;}
+.procChartTable{border:1px #efefef solid;border-collapse: collapse;color:#5C6596;}
+.procChartTable td{border:1px #efefef solid;padding:5px 2px;}
+.procChartTable tr:nth-child(odd){background-color: #e6f4ff}
+.n18_progressbg{overflow: initial;}
+.procChartArrow{left:-20px;top:50%;margin-top:-20px;position:absolute;width: 0;height: 0;border-top: 20px solid transparent;border-right: 30px solid #fff;border-bottom: 20px solid transparent;}
+.bkall{word-break: break-all;word-wrap: break-word;}
+.colorOF{color:#0F1533}
+.colorf4{color:#f46260}
+.n18_stepbg{cursor: pointer;}
+.p20{padding:20px;}
+.delIcon{background: url(../images/u4862.png) no-repeat;display: inline-block;width: 20px;height: 20px;cursor: pointer;vertical-align: middle;}
+.delIcon:hover{background: url(../images/u4867.png) no-repeat;}
+
+
+.checkBar{clear:both;width: 100%;display: none}
+.checkBarList{border-top: 1px #f5efef solid;padding:5px 0;line-height: 30px;clear:both;overflow: hidden}
+.barBgee{background-color: #eef3fb}
+.txtNoBorder{border:0;outline:none;}
+.editTxt .txtNoBorder{border:1px #2876fc solid;}
+.lhh30{line-height: 30px;height: 30px}
+.orange{color:#ff6a00;}
+.lh30{line-height: 30px}
+
+.bgea{background-color: #eaeaea}
+.sheduleTip{color:#ccc;font-size:18px;position: absolute;top:25%;transform: rotate(-45deg);-webkit-transform:rotate(-45deg);}
+
+.botBar{border-bottom: 1px #f5efef solid;padding:5px 0;line-height: 30px;clear:both;overflow: hidden}
+.tr{text-align: right}
+.tblue{color:#2876fc;}
+
+.afterReason{background-color: #f3f3f3;padding:3px 5px;}
+
+
+/*20200214 add list 样式*/
+.dn{display: none}
+.blue{color:#2876fc;}
+.list-head{}
+.list-head-title{line-height: 28px;float:left;padding:6px 0px 6px 0.5%;box-sizing: border-box;}
+.lh20{line-height: 20px}
+.bbf1{border-bottom: 1px #f1f1f1 solid}
+.btf1{border-top: 1px #f1f1f1 solid}
+.plh5 {padding-left:0.5%;}
+.pl40{padding-left:40px}
+.pr40{padding-right:40px}
+.pb10{padding-bottom: 10px}
+.list-head-bd {border-bottom: 1px solid #9aa2ce;}
+.bxSizeB{box-sizing: border-box;}
+.greyB{color: #666}
+.greyB:hover{color:#2876fc}
+
+.wareHUpload{width: 22px;height: 22px;display: inline-block;border:1px #67ace1 solid;border-radius: 50%;text-align: center;line-height: 22px;}
+.wareHUpload > i{display:inline-block;background:url(../images/new2016_icon.png) no-repeat -24px 0;width:13px;height:14px;margin:0px;}
+.optionItem{background-color: #fff;border-radius: 5px;border:1px #eee solid;padding:2px 10px;color:#666;}
+.optionItem:hover{border-color:#005eff}
+.optionItem.on{background-color: #005eff;color:#fff;}
+
+.ui-input > input[readonly],.ui-input > input[disabled]{color:#ccc;background-color: #ececec;-webkit-user-select: none;-ms-user-select: none;user-select: none; }
+.ui-input > input[readonly]:hover,.ui-input > input[disabled]:hover.ui-input > input[readonly]:focus,.ui-input > input[readonly]:focus{border-color: #babbc3}
+
+.icon-del:hover{background:url(../images/u4905.png);}
